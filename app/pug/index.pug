@@ -1,0 +1,61 @@
+extends templates/layout
+
+block main 
+
+
+  .mdl-grid
+    .container.mdl-cell.mdl-cell--12-col.mdl-grid
+      button#tasks-btn.mdl-button.mdl-button--icon.mdl-js-button.mdl-js-ripple-effect
+        i.material-icons fingerprint
+      .display-box
+        #phrase
+        #time.mdl-cell.mdl-cell--12-col
+      
+      .controls
+        #pause.pausebtn
+          #mini-icon.pause-icon
+        #break.stopbtn BREAK
+      #sound
+
+      #row1.icon-box.mdl-cell.mdl-cell--12-col
+        .dot.ready
+        //- .mdl-tooltip.mdl-tooltip--large(data-mdl-for='start') Start!
+        .dot.inactive
+        .dot.inactive
+        .dot.inactive
+        +one_pomo('icon-toggle-5', 'games', 'play')
+        .mdl-tooltip.mdl-tooltip--right(data-mdl-for='play') Take a brake. Go play!
+      //- hr
+      //- #row2.icon-box.mdl-cell.mdl-cell--2-col
+      //-   +one_pomo('icon-toggle-10', 'local_dining', 'lunch')
+      //-   .mdl-tooltip.mdl-tooltip--right(data-mdl-for='lunch') Time to have a lunch ;)
+      //- hr
+      //- .icon-box.mdl-cell.mdl-cell--2-col
+      //-   +one_pomo('icon-toggle-11', 'brightness_1')
+      //-   +one_pomo('icon-toggle-12', 'brightness_1')
+      //-   +one_pomo('icon-toggle-13', 'brightness_1')
+      //-   +one_pomo('icon-toggle-14', 'brightness_1')
+      //-   +one_pomo('icon-toggle-15', 'directions_run', 'run')
+      //-   .mdl-tooltip.mdl-tooltip--right(data-mdl-for='run') Stay active, move your body.
+      //- hr
+      //- .icon-box.mdl-cell.mdl-cell--2-col
+      //-   +one_pomo('icon-toggle-16', 'brightness_1')
+      //-   +one_pomo('icon-toggle-17', 'brightness_1')
+      //-   +one_pomo('icon-toggle-18', 'brightness_1')
+      //-   +one_pomo('icon-toggle-19', 'brightness_1')
+      //-   +one_pomo('icon-toggle-20', 'nature_people', 'nature')
+      //-   .mdl-tooltip.mdl-tooltip--right(data-mdl-for='nature') Take a walk in the park.
+
+  include tasks
+  
+
+  script(src='js/script.js')
+
+    
+
+mixin one_pomo(id, icon, iid)
+    //- label.mdl-icon-toggle.mdl-js-icon-toggle.mdl-js-ripple-effect(for=id, id=iid)
+      input.mdl-icon-toggle__input(id=id type='checkbox')  
+    //- .dot
+  
+      
