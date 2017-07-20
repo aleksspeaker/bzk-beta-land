@@ -103,4 +103,21 @@ body {
   padding-left: 20px; }
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 32px; }
+
+.top-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  color: white;
+  margin-top: 16px;
+  font-size: 1.75rem; }
