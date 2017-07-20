@@ -1,249 +1,62 @@
-$red: #FF4D8F
-
-
-
-body 
-	box-size: border-box;
-	font-family: 'Roboto', sans-serif
-	overflow: hidden
-
-.mdl-layout 
-	overflow: hidden
-
-.container 
-	display: flex
+body
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	background: url('../images/ipad+iphone.jpg') no-repeat center
+	background-size: cover
 	height: 100vh
-	width: 100vw
+
+.mega-wrapper
+	margin: 0
+	padding: 0
+	width: 100%
+	height: 100vh
+	overflow: hidden
+	display: flex
 	flex-direction: column
 	justify-content: center
 	align-content: center
 	align-items: center
 
-.display-box
+.wrapper
+	max-width: 1024px
+	margin: 0
+	padding: 16px
+	background: rgba(0,0,0,.48)
+	border-radius: 8px
+.page-title
+	color: white
+
+.hero-image
+	// background: rgba(0,0,0,.13)
+	color: white
+
+#email-container
 	display: flex
 	flex-direction: column
-	justify-content: flex-start
-	align-content: flex-start
-	align-items: flex-start
-
-.icon-box 
-	display: inline-flex
 	justify-content: center
-	position: relative
+	align-items: center
+	color: white
 
-.bdr 
-	border: 1px solid red
+#emailHelp
+	color: white
+.jumbotron
+	background: rgba(0,0,0,.22)
+	color: white
 
-.ready
-	border-radius: 100%
-	width: 20px
-	height: 20px
-	background: grey
-	cursor: pointer
-	transition: all .2s ease-out
-	zoom: 1
-	margin: 8px
-	overflow: hidden
-
-.red-active 
-	z-index: 1001
-	font-weight: 300
-	color: white !important
-	transform: scale(1.1)
-	background: $red
-	transition: .3s
-	
-.red-active#phrase
-	width: 100%
-	margin-left: 0px
+.logo
 	margin-bottom: 32px
-	justify-content: center
-	text-align: center
-	font-size: 2rem
-	font-weight: 500
 
-.ready:hover 
-	background: $red
+.left-col
+	border-right: 1px solid rgba(255,255,255,.54)
 
-.active
-	border-radius: 100%
-	width: 20px
-	height: 20px
-	background: $red
-	cursor: pointer
-	transition: all .2s ease-out
-	zoom: 1
-	margin: 8px
-	overflow: hidden
+.form-holder
+	form
+		display: flex
+		justify-content: center
 
-.inactive
-	border: 1px solid grey
-	border-radius: 100%
-	width: 19px
-	height: 19px
-	background: rgba(0,0,0,0)
-	cursor: pointer
-	zoom: 1
-	margin: 8px
-	outline: none
+.question
+	margin-bottom: 32px
 
-.anim
-	transform: scale(131)
-	z-index: 1000
-	overflow: hidden
-	background: $red
-	outline: none
-
-
-.app-title 
-	width: 100%
-	text-align: center
-	height: 142px
-	font-weight: 100
-	color: $red
-	position: fixed
-
-
-.controls
-	// margin-top: -16px
-	z-index: 2002
-	overflow: hidden
-	height: 0px
-	width: 100px
-	overflow-x: auto
-	transition: .3s
-
-.cont-active
-	height: 125px
-
-.pausebtn
-	width: 24px
-	height: 24px
-	margin: 8px auto 32px
-	display: flex
-	align-content: center
-	justify-content: center
-	border-radius: 50%
-	z-index: 2002
-	color: white
-	border: 1px solid white
-	padding: 8px
-	outline: none
-	transition: .3s
-	.pause-icon
-		border-right: 3px solid #fff
-		border-left: 3px solid #fff
-		height: 18px
-		width: 4px
-		margin: auto
-		transition: .05s
-	.play-icon
-		margin: 2px 0px 0px 6px
-		width: 0
-		height: 0
-		border-style: solid
-		border-width: 10px 0 10px 16px
-		border-color: transparent transparent transparent #FFF
-
-.pausebtn:hover
-	cursor: pointer
-	color: $red
-	border: 1px solid #white
-	transform: scale(1.3)
-	background: white
-	.pause-icon
-		// background: $red
-		border-right: 3px solid $red
-		border-left: 3px solid $red
-	.play-icon
-		margin: 2px 0px 0px 6px
-		width: 0
-		height: 0
-		border-style: solid
-		border-width: 10px 0 10px 16px
-		border-color: transparent transparent transparent $red
-
-.stopbtn
-	width: 48px
-	margin: 16px auto
-	display: flex
-	align-content: center
-	justify-content: center
-	border-radius: 4px
-	z-index: 2002
-	color: white
-	border: 1px solid white
-	padding: 8px
-	transition: .3s
-.stopbtn:hover
-	cursor: pointer
-	color: $red
-	border: 1px solid $red
-	transform: scale(1.3)
-	background: white
-
-#time 
-	height: 4rem
-	display: flex
-	justify-content: center
-	align-items: center
-	font-size: 4rem;
-	font-weight: 100
-	color: rgba(0,0,0,.54)
-
-#phrase 
-	margin-left: 10px
-	min-height: 16px
-	display: flex
-	justify-content: center
-	align-items: center
-	font-size: 1.3rem
-	font-weight: 400
-	color: rgba(0,0,0,.54)
-	transition: .3s
-
-#startimage 
-	position: absolute
-	width: 80px
-	top: 0
-	left: -1500%
-	opacity: .5
-
-#tasks-btn 
-	position: absolute
-	top: 36px
-	left: 16px
-
-.task-container 
-	border-radius: 4px
-	display: flex
-	align-items: center
-	justify-content: center
-
-.tasks-title 
-	display: inline-flex
-	font-size: 2rem
-	line-height: 5rem
-	width: 100%
-	text-aligh: center
-	font-weight: 100
-	color: rgba(0,0,0,.54)
-	align-items: center
-	justify-content: space-between
-
-
-#tasks 
-	padding-left: 32px
-	background: white
-	height: 100vh
-	width: 280px
-	position: absolute
-	top: 0
-	left: -200%
-	transition: .3s
-	z-index: 1001
-	border-radius: 4px
-
-#tasks.active
-	left: 0
-
+.hero-text
+	padding-left: 20px

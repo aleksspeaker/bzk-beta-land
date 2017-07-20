@@ -1,61 +1,61 @@
 extends templates/layout
 
-block main 
+block main
+  .mega-wrapper 
+    .container-fluid.wrapper
+      header
+        image.logo(src="../images/logo/bzk-logo-white.svg" height="64px")
+        //- h3.page-title Designed for MSP, CSP, & VARS
+        //- .jumbotron
+        //-   h1.display-3 Hello, world!
+        //-   p.lead
+        //-     | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        //-   hr.my-4
+        //-   p
+        //-     | It uses utility classes for typography and spacing to space content out within the larger container.
+        //-   p.lead
+        //-     a.btn.btn-primary.btn-lg(href='#', role='button') Learn more
+
+      .hero-image
+        .row
+          .col-12
+            h4.hero-text
+              |STANDOUT FROM COMPETITORS, GENERATE LEADS & REFERRALS,
+              br
+              |AND CLOSE DEALS
+          .col-sm-6.left-col
+            ul
+              li Send 1-to-1 videos that build trust
+              li Gather analytics that help you sell smarter
+              li Integrate with Connectwise, Gmail, and your favorite CRMs
+              li Use Predictive Analytics  to determine the right customer to target
+              li Improve sales & marketing performance with 1-to-1 & Group coaching
+              li Integrate with Connectwise, Gmail, and your favorite CRMs
+          .col-sm-6#email-container
+            h4.question Want to be our beta-user?
+            .form-holder
+              form.form-inline
+                //- label(for="email-capture") Email address
+                input#email-capture.form-control(size="26" type="email" aria-describedby="emailHelp" placeholder="Enter your email")
+                button.btn.btn-danger(type="submit") Request FREE Early Access
+          .col-12
+            small#emailHelp.form-text *Access to the Closed Beta is by Invitation only. Request accepted until the 30th of August 2017.
 
 
-  .mdl-grid
-    .container.mdl-cell.mdl-cell--12-col.mdl-grid
-      button#tasks-btn.mdl-button.mdl-button--icon.mdl-js-button.mdl-js-ripple-effect
-        i.material-icons fingerprint
-      .display-box
-        #phrase
-        #time.mdl-cell.mdl-cell--12-col
-      
-      .controls
-        #pause.pausebtn
-          #mini-icon.pause-icon
-        #break.stopbtn BREAK
-      #sound
 
-      #row1.icon-box.mdl-cell.mdl-cell--12-col
-        .dot.ready
-        //- .mdl-tooltip.mdl-tooltip--large(data-mdl-for='start') Start!
-        .dot.inactive
-        .dot.inactive
-        .dot.inactive
-        +one_pomo('icon-toggle-5', 'games', 'play')
-        .mdl-tooltip.mdl-tooltip--right(data-mdl-for='play') Take a brake. Go play!
-      //- hr
-      //- #row2.icon-box.mdl-cell.mdl-cell--2-col
-      //-   +one_pomo('icon-toggle-10', 'local_dining', 'lunch')
-      //-   .mdl-tooltip.mdl-tooltip--right(data-mdl-for='lunch') Time to have a lunch ;)
-      //- hr
-      //- .icon-box.mdl-cell.mdl-cell--2-col
-      //-   +one_pomo('icon-toggle-11', 'brightness_1')
-      //-   +one_pomo('icon-toggle-12', 'brightness_1')
-      //-   +one_pomo('icon-toggle-13', 'brightness_1')
-      //-   +one_pomo('icon-toggle-14', 'brightness_1')
-      //-   +one_pomo('icon-toggle-15', 'directions_run', 'run')
-      //-   .mdl-tooltip.mdl-tooltip--right(data-mdl-for='run') Stay active, move your body.
-      //- hr
-      //- .icon-box.mdl-cell.mdl-cell--2-col
-      //-   +one_pomo('icon-toggle-16', 'brightness_1')
-      //-   +one_pomo('icon-toggle-17', 'brightness_1')
-      //-   +one_pomo('icon-toggle-18', 'brightness_1')
-      //-   +one_pomo('icon-toggle-19', 'brightness_1')
-      //-   +one_pomo('icon-toggle-20', 'nature_people', 'nature')
-      //-   .mdl-tooltip.mdl-tooltip--right(data-mdl-for='nature') Take a walk in the park.
-
-  include tasks
-  
-
-  script(src='js/script.js')
 
     
 
-mixin one_pomo(id, icon, iid)
-    //- label.mdl-icon-toggle.mdl-js-icon-toggle.mdl-js-ripple-effect(for=id, id=iid)
-      input.mdl-icon-toggle__input(id=id type='checkbox')  
-    //- .dot
+
+
+
+
+
+
+
+  script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous")
+  script(src='js/script.js')
   
-      
+        
