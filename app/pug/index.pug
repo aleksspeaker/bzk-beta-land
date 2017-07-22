@@ -5,20 +5,10 @@ block main
     .container-fluid.wrapper
       header
         .row
-          .col-sm-3
+          .logo-container
             image.logo(src="./images/logo/bzk-logo-white.svg" height="64px")
-          .col-sm-9
+          .col-12
             .top-text Closed Beta Test
-        //- h3.page-title Designed for MSP, CSP, & VARS
-        //- .jumbotron
-        //-   h1.display-3 Hello, world!
-        //-   p.lead
-        //-     | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-        //-   hr.my-4
-        //-   p
-        //-     | It uses utility classes for typography and spacing to space content out within the larger container.
-        //-   p.lead
-        //-     a.btn.btn-primary.btn-lg(href='#', role='button') Learn more
 
       .hero-image
         .row
@@ -42,9 +32,21 @@ block main
                 //- label(for="email-capture") Email address
                 //- input#email-capture.form-control(size="26" type="email" aria-describedby="emailHelp" placeholder="Enter your email")
               a(href="https://docs.google.com/forms/d/e/1FAIpQLSdoLBc7mb588Nocc6iSMIXNRQ5xLpX2jUAPqfpeqY9BkWEivQ/viewform")
-                button.btn.btn-danger Request FREE Early Access
+                button.btn.btn-danger Request FREE Early Access*
           .col-12
             small#emailHelp.form-text *Access to the Closed Beta is by Invitation only. Request accepted until the 30th of August 2017.
+        .row
+          .col-12.text-center
+            h4 Suite of Tools
+          .col-12
+            div#suite
+             div Video Email 
+             div Tracking
+             div Two-Way Texting
+             div Landing Pages
+             div Marketing Tools
+             div Sales Coaching
+             div Predictive Analytics
 
 
 
